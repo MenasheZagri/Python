@@ -1,0 +1,150 @@
++*In[1]:*+
+[source, ipython3]
+----
+import numpy as np
+
+----
+
+
++*In[33]:*+
+[source, ipython3]
+----
+#declare array
+my_list = [1,2,3]
+----
+
+
++*In[3]:*+
+[source, ipython3]
+----
+#check type
+type(np.array(my_list))
+----
+
+
++*Out[3]:*+
+----numpy.ndarray----
+
+
++*In[4]:*+
+[source, ipython3]
+----
+#insert array into variable
+arr= np.array(my_list)
+arr
+----
+
+
++*Out[4]:*+
+----array([1, 2, 3])----
+
+
++*In[10]:*+
+[source, ipython3]
+----
+#create range array with skips
+np.arange(0,110,2)
+----
+
+
++*Out[10]:*+
+----array([  0,   2,   4,   6,   8,  10,  12,  14,  16,  18,  20,  22,  24,
+        26,  28,  30,  32,  34,  36,  38,  40,  42,  44,  46,  48,  50,
+        52,  54,  56,  58,  60,  62,  64,  66,  68,  70,  72,  74,  76,
+        78,  80,  82,  84,  86,  88,  90,  92,  94,  96,  98, 100, 102,
+       104, 106, 108])----
+
+
++*In[7]:*+
+[source, ipython3]
+----
+#create 3d matrix
+np.zeros((3,5))
+----
+
+
++*Out[7]:*+
+----array([[0., 0., 0., 0., 0.],
+       [0., 0., 0., 0., 0.],
+       [0., 0., 0., 0., 0.]])----
+
+
++*In[11]:*+
+[source, ipython3]
+----
+#create lineare space array
+np.linspace(0,100,11)
+----
+
+
++*Out[11]:*+
+----array([  0.,  10.,  20.,  30.,  40.,  50.,  60.,  70.,  80.,  90., 100.])----
+
+
++*In[16]:*+
+[source, ipython3]
+----
+#create random matrix
+np.random.randint(0,1000,(3,3))
+----
+
+
++*Out[16]:*+
+----array([[389, 585, 163],
+       [685, 373, 550],
+       [887, 551, 166]])----
+
+
++*In[23]:*+
+[source, ipython3]
+----
+np.random.seed(101)
+np.random.randint(0,100,10)
+----
+
+
++*Out[23]:*+
+----array([95, 11, 81, 70, 63, 87, 75,  9, 77, 40])----
+
+
++*In[29]:*+
+[source, ipython3]
+----
+
+np.random.seed(101)
+arr = np.random.randint(0,100,10)
+arr
+----
+
+
++*Out[29]:*+
+----array([95, 11, 81, 70, 63, 87, 75,  9, 77, 40])----
+
+
++*In[30]:*+
+[source, ipython3]
+----
+arr.max()
+----
+
+
++*Out[30]:*+
+----95----
+
+
++*In[31]:*+
+[source, ipython3]
+----
+arr.min()
+----
+
+
++*Out[31]:*+
+----9----
+
+
++*In[ ]:*+
+[source, ipython3]
+----
+
+----
